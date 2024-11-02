@@ -1,0 +1,116 @@
+/* styles-confirmacion.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0A1128; /* Fondo oscuro */
+    color: #e0e0e0; /* Texto claro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header {
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(135deg, #0f958e, #0ddcc4); /* Gradiente en el encabezado */
+    padding: 20px;
+    width: 100%;
+}
+
+.main-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 30px 0;
+    background-color: #2b2e42; /* Fondo de la sección principal */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra más suave */
+}
+
+.step-section h2 {
+    margin-bottom: 20px;
+    color: #4ea3e4; /* Color del encabezado */
+    text-align: center;
+}
+
+.confirmation-message {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #4caf50; /* Mensaje de confirmación */
+    font-size: 18px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0f2b7a; /* Color del botón */
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Añadido efecto de transformación */
+}
+
+button:hover {
+    background-color: #203d6d; /* Color de fondo al pasar el mouse */
+    transform: scale(1.05); /* Escala al pasar el mouse */
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #0A1128; /* Fondo oscuro */
+    color: #e0e0e0; /* Texto claro */
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Sombra ligera para el borde */
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #e0e0e0; /* Texto claro */
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Subrayar en hover */
+}
+
+.language-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.language-button {
+    border: 1px solid #e0e0e0; /* Borde claro */
+    padding: 5px 10px;
+    background-color: #0A1128; /* Fondo oscuro */
+    cursor: pointer;
+    font-size: 14px;
+    color: #e0e0e0; /* Texto claro */
+    transition: background-color 0.3s;
+}
+
+.language-button:hover {
+    background-color: #005b5b; /* Fondo al pasar el mouse */
+}

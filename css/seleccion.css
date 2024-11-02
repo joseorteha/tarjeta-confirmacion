@@ -1,0 +1,230 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0A1128;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+nav {
+    background: linear-gradient(135deg, #000, #0A1128);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #005b5b;
+    transform: scale(1.1);
+}
+
+.plans {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.plans h1 {
+    font-size: 2.8rem; 
+    margin-bottom: 20px;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.plan-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.plan {
+    background-color: #2b2e42;
+    border: 2px solid #3b3f58;
+    border-radius: 10px;
+    width: 300px; 
+    height: 480px; 
+    padding: 30px; 
+    text-align: left;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.plan:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    left: -10px;
+    right: -10px;
+    border: 1px solid #3b3f58;
+    border-radius: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.plan:hover:before {
+    opacity: 1;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 30px rgba(30, 80, 229, 0.8);
+}
+
+.plan a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces dentro de las tarjetas */
+    color: inherit; /* Asegura que el texto herede el color del padre */
+}
+
+.plan h2 {
+    color: #4ea3e4;
+    font-size: 2rem; 
+    margin-bottom: 20px; 
+    border-bottom: 2px solid #4ea3e4;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 5px rgba(0, 115, 230, 0.3);
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+}
+
+.plan ul li {
+    margin: 15px 0; 
+    font-size: 1.1rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plan ul li i {
+    font-size: 1.5rem; 
+    color: #4ea3e4;
+}
+
+.plan .price {
+    font-size: 1.8rem; 
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: linear-gradient(90deg, #4ea3e4, #2b2e42);
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, background 0.3s ease;
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+.plan-container a {
+    text-decoration: none; /* Elimina el subrayado de todo el enlace */
+}
+
+
+.plan .price:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #2b2e42, #4ea3e4);
+}
+
+footer {
+    background-color: #0A1128; /* Mismo fondo que el body */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #4ea3e4;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #3b8bb5;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #0A1128; /* Mismo fondo que el body */
+    color: #e0e0e0; /* Cambiado a blanco */
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #e0e0e0; /* Cambiado a blanco */
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.language-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.language-button {
+    border: 1px solid #e0e0e0; /* Cambiado a blanco */
+    padding: 5px 10px;
+    background-color: #0A1128; /* Mismo fondo que el body */
+    cursor: pointer;
+    font-size: 14px;
+    color: #e0e0e0; /* Cambiado a blanco */
+    transition: background-color 0.3s;
+}
+
+.language-button:hover {
+    background-color: #005b5b; /* Ajustado para el hover */
+}
